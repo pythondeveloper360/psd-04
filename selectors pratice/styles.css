@@ -1,0 +1,10 @@
+article~p{
+    background-color: aqua;
+}
+p::before {
+    content: "Read this -";
+    background-color: aqua;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+  }

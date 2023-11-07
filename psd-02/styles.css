@@ -1,0 +1,15 @@
+*{
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height:150px;
+    background-color: antiquewhite;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: antiquewhite;
+}

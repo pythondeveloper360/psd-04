@@ -1,0 +1,25 @@
+#main{
+    position: relative;
+    width: 900px;
+    
+}
+#next{
+    position: absolute;
+    width: 100px;
+
+    top:43%;
+    right:50px
+    /* margin-bottom:20%; */
+}
+#image{
+    width: 100%;
+    /* width: 900px; */
+    height: 600px;
+}
+#prev{
+    width: 100px;
+    position: absolute;
+    top:43%;
+    left:50px
+    /* margin-bottom:20%; */
+}

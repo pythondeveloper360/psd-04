@@ -1,0 +1,76 @@
+.container{
+    position: fixed;
+    display: flex;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-grow: 10;
+    gap: 30px;
+    border: 1px solid rgb(206, 206, 255);
+    padding: 10px;
+    
+}
+.header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+input[type='text']{
+    font-size: larger;
+}
+button{
+    border: none;
+    border-radius: 4px;
+    font-size: x-large;
+    background-color: #80b1f1;
+}
+button:hover{
+    background-color: #4c93f0;
+    
+}
+.hidden{
+    display: none!important;
+}
+
+.next_btn{
+    width: 100px;
+    float: right !important;
+}
+.btn_container{
+    width: 100%;
+}
+
+.ele_container{
+    position: relative;
+    left: 20%;
+    display: flex;
+    gap: 3%;
+    width: 60%;
+}
+
+input[type='date']{
+    width: 30%;
+    /* float: right; */
+    font-size:large;
+}
+
+input[type='password']{
+    font-size: larger;
+}
+input[type='email']{
+    font-size: larger;
+}
+input[type='password']:focus{
+    font-size: x-large;
+}
+input[type= 'text']:focus{
+    font-size: x-large;
+}
+input[type= 'email']:focus{
+    font-size: x-large;
+}
+.warning{
+    background-color: rgb(255, 200, 200);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <script src="script.js"></script>
+    <title>SignUp</title>
+</head>
+
+<body>
+    <!-- <div class = 'container'> -->
+    <h2 class="header ">Create a Bloggir acconut</h2>
+    <div class="container" id='one' name="form1">
+        <h3 class="header">Enter your name</h2>
+            <input type="text" placeholder="First Name" id='firstName'>
+            <input input type="text" placeholder="Last Name(optional)" id='lastName'>
+            <div class='btn_container'>
+                <button class="next_btn" onclick="nextBtn('1')">Next</button>
+            </div>
+    </div>
+    <div class="container hidden " id='two'>
+        <h3 class="header">Enter your birthday and gender</h3>
+        <div class="ele_container">
+            <label for="bDate">Select Your birth day</label>
+            <input id='bDate' type="date" id = bdate>
+        </div>
+        <div class="ele_container">
+            <label for="gender">Select Your Gender</label>
+
+            <select id='gender' id = 'gender'>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+        </div>
+        <div class='btn_container'>
+            <button class="next_btn" onclick="nextBtn('2')">Next</button>
+        </div>
+    </div>
+    <div class="container hidden" id = 'three'>
+        <h3>Email Address</h3>
+        <input id = 'email1' type="email" placeholder="Enter your email address">
+        <input id = 'email2' type="email" placeholder="retype your email address">
+        <h3>Create a password</h3>
+        <input id = 'password1' type="password" placeholder="Create a strong password">
+        <input id = 'password2' type="password" placeholder="Repeat password">
+        <div class='btn_container'>
+            <button class="next_btn"onclick= "nextBtn('3')">Next</button>
+        </div>
+    </div>
+    <div class="container hidden" id = 'four'>
+        <h1 class="header">Your account is successfully created </h1>
+        <a href="#">GOTO home page</a>
+    </div>
+</body>
+
+</html>

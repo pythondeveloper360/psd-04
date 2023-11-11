@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .contanier{
+        height: auto;
+        width: 1600px;
+        background: red;
+    }
+    .header{
+        height: 166px;
+        width: inherit;
+        background: #ffff;	
+    }
+    .left_header{
+        width: 50%;
+        height: inherit;
+        background: #ffff;
+        float: left;
+    }
+    .left_header h1{
+	    color:#e14f42;
+	    font-size:60px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        margin-left: 322px;          
+    }
+    .left_header p{
+        font-family:OpenSans;
+	    color:#7d7d7d;border-radius: 8px; 
+	    font-size:13px;
+	    font-weight:bold;
+        margin-left: 322px;
+        letter-spacing: 1px;
+    }
+    .right_header{
+        width: 50%;
+        height: inherit;
+        background: #ffff;
+        float: left;
+    }
+    .right_header button{
+        width: 98px;
+        height: 30px;
+        border: none;
+        background: #e14f42;
+	    cursor:pointer;
+        float: right;
+        margin-right: 335px;
+        margin-top: 45px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .right_header ul {
+        height: 27px;
+        display: inline-block;
+        float: right;
+        margin-right: 363px;
+    }
+    .right_header ul li{
+       display: inline-block;
+	    line-height: 20px;
+	    border-right:1px #c9c9c9 solid;
+        font-size:12px;	
+	    color:#5b595a;
+        margin-top: 25px;
+        text-align: center;
+    }
+    .right_header ul li:first-child{
+	   color:#458c6c;
+       width: 40px;
+    }
+    .right_header ul li:nth-child(5n+2){
+        width: 88px;
+    }
+    .right_header ul li:nth-child(5n+3){
+        width: 40px;
+    }
+    .right_header ul li:nth-child(5n+4){
+        width: 85px;
+    }
+    .right_header ul li:last-child{
+        width: 10px;
+        margin-left: 10px;
+	    border:none;
+    }
+    .section{
+        width:inherit;
+        height: auto;
+        border-top:1px #c2c2c2 solid;
+        box-shadow: 1px 0px  0px 0px #c2c2c2;
+        background: #ffff;
+    }
+    .section .upper_section{
+        height: 400px;
+        width: inherit;
+        background: #ffff;
+    }
+    .main_pic_parent{
+        position: relative;
+    }
+    .upper_section .main_pic{
+        margin-left: 322px;
+        width: 400x;
+        position: relative;
+    }
+    .slider{
+        height: 90px;
+        width: 480px;
+        background: rgba(0 0 0 / 65%);
+        position: absolute;
+        left: 49.5%;
+        top: 42%;
+    }
+    .upper_section .discribox{ 
+        display: inline-block;
+        margin-left: 62px;
+        margin-top: 22px;
+        color: #ffff;
+        font-size: 16px;
+        font-family: [OpenSans Regular];
+    }
+    .square{
+        position: relative;
+    }
+    .square ul{
+          position: absolute;
+          left: 160px;
+          bottom: 25%;
+     }
+     .square ul li{
+        display:inline-block;
+	    width:11px;
+	    height:11px;
+	    background:#787878;
+	    border:1px #4b4b4b solid;
+	    cursor:pointer;
+     }
+    .square .active{
+        background: black !important;
+     }
+     .lower_section{
+        height: 350px;
+        width: inherit;
+        background: #ffff;
+        position: relative;
+     }
+     .lower_section .left_box{
+        height: inherit;
+        width: 50%;
+        float: left;
+        display: inline-block;
+        background: #fff;
+     }
+     .left_box h1{
+        margin-left: 41%;
+        margin-top: 30px;
+        font-family: [OpenSans Regular];
+        font-size: 18px;
+        color: #458c6c;
+     }
+     .left_box .team_pic{
+        margin-left: 41%;
+        margin-top: 20px;
+     }
+     .left_box h2{
+        display: inline-block;
+        width: 40%;
+        height: 41px;
+        font-size: 14px;
+        font-family: Myriad Pro Regular;
+        color: #626161;
+        position: absolute;
+        left: 35%;
+        top: 77px;
+     }
+     .left_box p{
+        width: 33%;
+        height: 41px;
+        font-size: 14px;
+        font-family: Myriad Pro Regular;
+        color: #838181;
+        display: inline-block; 
+        position: absolute;
+        left: 35%;
+        top: 40%;
+     }
+     .left_box button{
+        width: 98px;
+        height: 29px;
+	    background:#60bf93;
+	    font-family:OpenSans;
+	    font-size:12px;
+	    border:1px #60bf93 solid;
+	    color:white;
+        position: absolute;
+        left: 35%;
+        top: 56%;
+     }
+     .lower_section .right_box{
+        height: inherit;
+        width: 50%;
+        float: left;
+        display: inline-block;
+        background: #ffff;
+     }
+     .right_box h1{
+        margin-left: 10%;
+        margin-top: 30px;
+        font-family: [OpenSans Regular];
+        font-size: 18px;
+        color: #458c6c
+     }
+     .right_box p{
+        margin-left: 10%; 
+        width: 420px;
+        height: 103px;
+        font-size: 15px;
+        font-family: Myriad Pro Regular;
+        color: #838181;
+        margin-top: 30px;
+     }
+     .right_box button{
+        width: 98px;
+        height: 29px;
+	    background:#60bf93;
+	    font-family:OpenSans;
+	    font-size:12px;
+	    border:1px #60bf93 solid;
+	    color:white;
+        position: absolute;
+        margin-left: 5%;
+        margin-top: 18px;
+     }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="header">
+            <div class="left_header">
+                <h1>Life</h1>
+                <p>Social organization</p>
+            </div>
+            <div class="right_header">
+                <button>DONATE</button>
+                <ul>
+                    <li>Home</li>
+                    <li>What We Do</li>
+                    <li>Media</li>
+                    <li>Get involved</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="upper_section">
+                <img src="image/pic.jpg" alt="main_pic" class="main_pic">
+            <div class="slider">
+                <div class="discribox">
+                    <p>join our compaigns and give <br><br>
+                       hope to homeless people</p>
+                </div>
+            </div>
+            <div class="square">
+                <ul>
+                    <li></li>
+                    <li class="active"></li>
+                    <li></li>
+            </div>
+        </div>
+            <div class="lower_section">
+                <div class="left_box">
+                    <h1>MEET OUR TEAM</h1>
+                    <img src="image/team.jpg" alt="team_pic" class="team_pic">
+                    <h2>Cras facilisis, nulla vel viverra tor, leo <br>magna sodales felis, quis</h2>
+                       <p>Proin pharetra luctus diamer sceleris <br>que eros convallisa </p>
+                       <button>Learn More</button>
+                </div>
+                <div  class="right_box">
+                    <h1>OUR MISSION</h1>
+                    <p>
+                        Following the <span style="color:#60bf93;">link </span> you’ll find all you wanted to know about free <br> theme released by TemplateMonster. <br><br> 
+
+Need more themes of this kind? Find a variety of premiums <span style="color:#60bf93;">society <br> & people templates</span>  at TemplateMonster.
+                    </p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>   
+</body>
+</html>

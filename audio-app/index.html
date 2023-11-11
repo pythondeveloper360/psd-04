@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='script.js'></script>
+    <link rel='stylesheet' href="styles.css">
+    <title>Audio</title>
+</head>
+
+<body>
+    <h2 id='name'></h2>
+    <div>
+
+        <select id = 'audios' onchange="play()"></select>
+        <!-- <button onclick="play()">Play</button> -->
+    </div>
+    <div id='main'>
+        <!-- <button onclick="backward()">Back</button> -->
+        <audio id='audio' controls autoplay></audio>
+        <!-- <button onclick="forward()">Forward</button> -->
+    </div>
+</body>
+<script>
+    let name = audios[0]
+    name = name.replace('-', ' ').replace('-', ' ').replace('-', ' ').toUpperCase()
+    document.getElementById('name').innerHTML = name
+    document.getElementById('audio').src = `./audio/${audios[0]}.mp3`
+    loadAudios()
+</script>
+
+</html>

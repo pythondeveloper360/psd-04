@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="styles.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input id='city'>
+        <button id='search' onclick="loadWeather()">Search</button>
+    </div>
+    <div id='main'>
+        <h2 id='loadingBanner'></h2>
+        <img id='cond'>
+        <div>
+            <h2 id='temp'></h2>
+            <h2 id='desc'></h2>
+            <h2 id='wind'></h2>
+        </div>
+    </div>
+</body>
+<script>
+    var input = document.getElementById("city");
+
+    input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("search").click();
+        }
+    }); 
+</script>
+
+</html>

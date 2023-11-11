@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+#main{
+    display: inline-block;
+
+    width: 70%;
+}
+
+#userImg{
+    padding: 10px;
+    width: 100%; 
+} 
+

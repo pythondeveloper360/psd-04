@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Q03c</title> 
+    <script>
+      function convertName()
+      {
+        //prompt user for name to be hidden
+         var inputName = prompt("Enter the name to be hidden")
+
+         //initialise hiddenName
+         var hiddenName = ""
+         
+         //add code to replace each character in the inputName with an asterisk and display the hidden name
+         for (let count = 1;count<=inputName.length;count++){
+            hiddenName+='*'
+         }   
+         document.getElementById("hiddenName").innerHTML = hiddenName
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Hiding Names</h3>
+    <button onclick="convertName()">Start</button>
+    <p id = 'hiddenName'></p>
+  </body>
+</html>

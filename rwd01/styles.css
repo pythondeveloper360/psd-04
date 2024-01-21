@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+}
+
+/* Header stuff */
+header {
+    margin: 0px;
+    height: 70vh;
+    background-image: url('img/architect.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#headersp1 {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    background-color: #1d1d1d;
+    padding: 5px 15px;
+    opacity: .75;
+    top: 400px;
+    left: 38%;
+    letter-spacing: 13px;
+}
+
+#headersp2 {
+    position: absolute;
+    top: 405px;
+    left: 48%;
+    color: white;
+    font-size: 50px;
+}
+
+/* Navbar stuff */
+nav {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#navDiv {
+    width: 100%;
+    background-color: white;
+    height: 54.5px;
+    position: relative;
+}
+
+#navsp1 {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+#navsp2 {
+    font-size: 30px;
+}
+
+#navDiv1 {
+    margin: 5px;
+    padding: 5px;
+    padding-right: 13px;
+    position: absolute;
+    top: 0px;
+}
+
+#navDiv1:hover {
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+#navDiv2 {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+}
+
+#navsp3,
+#navsp4,
+#navsp5 {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#navsp3:hover,
+#navsp4:hover,
+#navsp5:hover {
+    background-color: #aaaaaa;
+    cursor: pointer;
+}
+
+#projectsHeader,#aboutHeader {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+/* project Container Stuff */
+#projectImagesContainer {
+    margin-left: 107px;
+}
+.projectImageContainer {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    position: relative;
+}
+
+.projectImageContainer img {
+    width: inherit;
+}
+.projectImageContainer  span{
+    position: absolute;
+    font-size: x-large;
+    padding: 5px;
+    background-color: #1d1d1d;
+    color: white;
+    top: 0px;
+    left: 0px;
+}
+
+
+#aboutCardsDiv{
+    margin-left: 107px;
+}
+
+#aboutDiv > p{
+    font-size: large;
+    width: 1370px;
+    margin-left:115px ;
+}
+.aboutCardDiv img{
+    width: 100%;
+    filter: grayscale(.5);
+}
+.aboutCardDiv{
+    display: inline-block;
+    margin: 10px;
+    width: 320px;
+    height: 300px;
+}
+.contactbtn{
+    font-size: 20px;
+    text-align: center;
+    background-color: #aaaaaa;
+    border-radius: 5px;
+    margin-top:10px ;
+    margin-bottom:10px ;
+    font-weight: bold;
+}
+.contactbtn:hover{
+    background-color: #7c7c7c;
+}
+.name, .role{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.role{
+    opacity: .8;
+}
+.aboutP{
+    font-size: large;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Q03c</title> 
+    <script>   
+      // Object type Guide created
+      function Guide (gID, ln, fn) {
+        this.guideID = gID
+        this.lastName = ln
+        this.firstName = fn
+
+        // New guide's details displayed
+        this.displayGuide = function(){
+          var display = ("The new guide details are GuideID: "+ this.guideID +" Last name: "+ this.lastName +" First name: "+ this.firstName)
+          return display
+        }
+      } // end of Guide function
+          
+      function addGuide(){ 
+        // Add code to get the input
+         
+
+
+
+
+          
+        var newGuide = new Guide(/* Add code to send the input to the relevant function */)
+
+        alert(newGuide.displayGuide())
+        // Add code to reset the form
+            
+
+            
+      } // end of addGuide function
+    </script>
+  </head>
+  <body>
+    <h2>New Guide Details</h2>
+    <form id="guideForm">
+      <fieldset style="width:15%">
+        <p>Enter Guide ID :<input type="text" id="inputID"></p>
+        <p>Enter Last name :<input type="text" id="inputLastName"></p>
+        <p>Enter First name :<input type="text" id="inputFirstName"></p>
+      </fieldset>
+      <p><input type="button" value="Register" id="submit" onclick="addGuide()"></p>
+    </form>
+  </body>
+</html>

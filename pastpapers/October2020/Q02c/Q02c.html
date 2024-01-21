@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Q02c</title>  
+    <style>
+      /* Traffic class */
+      .vehicle {
+        position: absolute;
+        display: block;
+          width: 400px;
+      }
+
+      .animated {
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+      }
+
+      /* Move the image left to right */
+      .vehicle-one {
+        left: -400px;
+        animation-name: move-right;
+      }
+
+      @keyframes move-right {
+        from {left: -400px;}
+        to {left: 100%;}
+      }
+
+      /* Move the image right to left */
+      .vehicle-two {
+        animation-delay: 3s;
+        /* add your css code here */
+         
+
+
+        }
+
+      @keyframes move-left {
+        /* Add your css code here */
+          
+
+          
+      }    
+    </style>
+  </head>
+  <body>
+    <h1>London Icons</h1>
+    <p>Black cabs and red buses are iconic symbols of London</p>
+    <img src="rightFacing.jpg" class="vehicle vehicle-one animated">
+    <img src="leftFacing.jpg" class="vehicle vehicle-two animated">
+  </body>
+</html>

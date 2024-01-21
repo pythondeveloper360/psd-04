@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>We Love Sailboats Registration</title> 
+    <style>
+    body {
+      font-family: Arial;
+    }
+      #comments {
+        width: 500px;
+        height: 100px;
+        resize: none;
+      }
+
+      #error {
+        color: red;
+      }
+    </style>
+    <script>
+      // Array created to hold the submitted reviews
+      var reviewArray = [
+        ["Sandra.Tucker@gmtestmail.com","19/01/2021","Cannot recommend highly enough. Fantastic service, fantastic sailboat, fantastic holiday"],
+        ["Alice.Arnold@gmtestmail.com","23/02/2021","This was our third year of using We Love Sailboats.  Will be using again next year but it was not quite as good as last year. The locations were better last year"],
+        ["Amy.Nichols@gmtestmail.com","03/03/2021","Loved the sailboat.  Will hire the same one and the same captain next year.  Would recommend"],
+        ["Beverly.Kelly@samapple.com","06/04/2021","Did not enjoy. The boat was not big enough for us. That is the only complaint though as the locations were fab."],
+        ["Isayas.Beyene@gmpost.com","15/04/2021","Will use again."],
+        ["","",""]
+      ] 
+
+      function addReview(){
+       var emailAddress = document.getElementById("emailAddress").value
+
+       // Add your code to store the form comments in the reviewComments variable
+      
+
+
+       /* Add your code to:
+            Check that an email address has been input
+            Check that comments have been input
+            Display a suitable error message in the 'error' paragraph */
+       if (                  ) {
+
+          
+
+       } else if (               ) {
+
+         
+
+       } else {
+          // Today's date generated
+          var today = new Date()
+
+           // Current month generated
+          var month = today.getMonth() + 1
+
+          // Date formatted
+          var dateToStore = today.getDate() +"/"+ month +"/"+today.getFullYear()
+
+          /* Add your code to:
+                 Add the email address, formatted date and review comments to the array
+                 Hide the form
+                 Calculate the total number of reviews in the array.
+                 Display (in the saved review paragraph) the total number of reviews and the saved review.
+          */
+
+         
+
+
+
+
+
+
+
+         
+       } 
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Review details</h2>
+    <form id="reviewDetails">
+      <p><label for="emailAddress">Email *:</label>
+      <input type="text" id="emailAddress"></p>
+      <p><label for="comments">Review *:</label></p>
+      <p><textarea id="comments"></textarea></p>
+      <p id="error" ></p>
+      <p><input type="button" onclick="addReview()" value="Submit"></p>
+    </form>
+    <p id="savedReview"></p>
+  </body>
+</html>

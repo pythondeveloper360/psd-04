@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow</title>
+</head>
+
+<body>
+  <h2>Manual Slideshow</h2>
+  <img class="slides" src="clouds.jpg">
+  <img class="slides" src="milkyway.jpg">
+  <img class="slides" src="stars.jpg">
+  <img class="slides" src="sun.jpg">
+  <button onclick="move('forward')">Next</button>
+  <button onclick="move('backward')">Back</button>
+  <!--Add a back button and call the move function  -->
+
+  <script>
+    var slideIndex = 0 //set the intial slide to the first slide
+    var firstSlide = 0 //set the firstSlide to 0
+    var slideshow = document.getElementsByClassName("slides")// Get the slideshow
+    var lastSlide = slideshow.length - 1 //set the lastSlide, taking into account slideshow elements are 0 to 3
+
+    showSlide(firstSlide) //show the first slide
+
+    function showSlide(slideNumber) {
+      //loop through the slideshow and hide all images 
+      for (count = 0; count <= lastSlide; count++) {
+        slideshow[count].style.display = "none"
+      }
+      //now display the correct slide
+      slideshow[slideNumber].style.display = "block"
+    }//end of slideshow function
+
+    function move(direction) {
+      //if the current slide is the last slide and next button clicked, slideIndex is set to firstSlide
+      if (slideIndex === lastSlide && direction === "forward") {
+        slideIndex = firstSlide
+        /* Add your code here.*/
+        // }else if (/*check current slide is first slide and back button clicked*/) {
+      } else if (slideIndex === firstSlide && direction == 'backward') {
+        slideIndex = lastSlide
+        /*set slideIndex to lastSlide*/
+
+        /* Add your code here.*/
+      } else if (direction == 'forward') {
+        slideIndex++
+        /*increment the slideIndex to move forward*/
+
+      } else {
+        //Otherwise move backwards by decrementing slideIndex
+        slideIndex--
+      }
+      //Show the slide
+      showSlide(slideIndex)
+    }//End of move function
+  </script>
+</body>
+
+</html>

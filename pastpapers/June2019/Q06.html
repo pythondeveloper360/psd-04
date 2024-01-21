@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Apply online</title>
+      <style>  
+        .visually-hidden {
+            position: absolute !important;
+            clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+            clip: rect(1px, 1px, 1px, 1px);
+            padding:0 !important;
+            border:0 !important;
+            height: 1px !important; 
+            width: 1px !important; 
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Apply online</h1>
+            <h2 class="subtitle">Enter your details below to proceed</h2>
+    </header>
+    <nav>
+        <ul class="unstyled-list">
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <p aria-hidden="true"><em>Note: * denotes a mandatory field.</em></p>
+            <section>
+                <h2 class="section-title">Your details</h2>
+                <fieldset class="title-choice">
+                    <legend>Title</legend>
+                    <ul class="unstyled-list">
+                        <li>
+                            <input type="radio" id="title_1" name="title" value="mr" >
+                            <label for="title_1">Mr</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="title_2" name="title" value="miss">
+                            <label for="title_2">Miss</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>
+                    <label for="name">Name: <span aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="username" aria-required="true">
+                </p>
+                <p>
+                    <label for="mail">E-mail: <span aria-hidden="true">*</span></label>
+                    <input type="email" id="mail" name="usermail" aria-required="true">
+                </p>
+                <p>
+                    <label for="password">Password: <span aria-hidden="true">*</span></label>
+                    <input type="password" id="pwd" name="password" aria-required="true">
+                </p>
+            </section>
+            <section>
+                <h2 class="section-title">Payment information</h2>
+                <p>
+                    <label for="card">Card type:</label>
+                    <select id="card" name="usercard">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="number">Card number: <span aria-hidden="true">*</span></label>
+                    <input type="text" id="number" name="cardnumber" aria-required="true">
+                </p>
+                <p>
+                    <label for="date">
+                        Expiration date:
+                        <span class="visually-hidden">in format dd/mm/yyyy</span>
+                    </label>
+                    <input type="date" id="date" name="expiration">
+                </p>
+            </section>
+            <section>
+                <h2>Submit application</h2>
+                <p id="proceed">By clicking continue below you agree to the terms and conditions set out in our user policy.</p>
+                <button type="submit" aria-describedby="proceed">Continue</button>
+            </section>
+        </form>
+    </main>
+    <footer>Copyright MyCompany 2018</footer>
+</body>
+</html>

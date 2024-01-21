@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>EcoBee Welcome</title> 
+  </head>
+  <body onload = "getUserNameAndAge()">
+    <script>
+     function getUserNameAndAge(){
+        // get the URL of the page:
+        var urlAddress = window.location.href
+
+        //split the URL into an array after "=" is found":
+        var splitUrl = urlAddress.split("=")
+
+        // get the last element of the array, which holds the username and age passed to the page:
+        var usernameAndAge = splitUrl[splitUrl.length-1]
+
+        // get age:
+        var age = usernameAndAge.substring(9,11)
+
+        // get username:
+        var username = usernameAndAge.substring(0,8)
+
+        
+
+       // add code to display the username:
+
+
+
+        /* add code to display the relevant age related message/
+        The message for juniors is in the file junior.txt
+        The message for adults is in the file adult.txt */
+
+      }
+    </script>
+    <h1>Thank you for your registration</h1>
+    <h2 id="welcomeMessage"><!-- username displays here  --></h2>
+     <p id="ageMessage"><!-- age related message displays here --></p>
+  </body>
+</html>

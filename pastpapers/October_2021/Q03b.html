@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Q03b</title>
+    <script>
+       function analyseMarks() {
+         // Array holding marks created
+         var markArray = [50, 79, 80, 60, 45, 37, 55]
+         var count
+         var lowest = 0
+         var highest = 0
+         var total = 0
+         var average = 0
+          
+         // Lowest mark generated
+         lowest = Math.min(...markArray)
+
+         // Add code to generate the highest mark
+         
+         // Add code to generate the average mark
+         for (count = 0; count < markArray.length; count ++){
+           
+             
+
+
+         }
+         
+          
+
+         //Display the lowest, highest and average marks
+         document.getElementById("lowest").innerHTML = lowest
+         document.getElementById("highest").innerHTML = highest
+         document.getElementById("average").innerHTML = average
+       }
+    </script>
+  </head>
+  <body onload="analyseMarks()">
+    <h2>Mark analysis</h2>
+    <table id="markTable" border = "1">
+      <thead>
+        <th>
+          Lowest Mark
+        </th>
+        <th>
+          Highest Mark
+        </th>
+        <th>
+          Average Mark
+        </th>
+      </thead>
+      <tbody>
+        <td id="lowest">
+        </td>
+        <td id="highest">
+        </td>
+        <td id="average">
+        </td>
+      <tbody>
+    </table>  
+  </body>
+</html>

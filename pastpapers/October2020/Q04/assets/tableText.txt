@@ -1,0 +1,5 @@
+Menu code	Menu item
+1		Fish and chips
+2		Vegetable curry
+3		Mince and dumplings
+4		House salad

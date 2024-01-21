@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Q03b</title> 
+	  <script>
+      //Initialise the array with these values in this order: Avocado, Clover, Apple, Sage, Blueberry 
+      var honeyArr = ["Avocado", "Clover", "Apple", "Sage", "Blueberry"]
+
+     
+      function sortArray() {
+      //display the unsorted array
+       document.getElementById("unsorted").innerHTML = "This is the unsorted array: "+ honeyArr
+
+      //add code to sort the array
+       honeyArr.sort()
+      //add code display the sorted array
+       document.getElementById("sort").innerHTML = "This is the sorted array: "+ honeyArr
+        
+      }
+    </script>
+	</head>
+  <body>
+    <h3>Open in your editor and add your code</h3>
+    <button onclick="sortArray()">Show Array</button>
+    <p id="unsorted"></p>
+    <p id="sort"></p>
+  </body>
+</html>

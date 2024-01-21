@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Q03c</title> 
+      <script>   
+        var secondsPassed = 0
+        var secondsToGuess = 0
+
+        function startGame() {
+          // Counting the seconds from when the page loads started
+          setInterval(function() { secondsPassed ++ }, 1000)
+
+          // Number of seconds to guess generated
+          secondsToGuess=Math.floor(Math.random() * 10) + 1;
+
+          // Number of seconds to guess displayed in the 'seconds' paragraph
+          document.getElementById("seconds").innerHTML = secondsToGuess
+        }    
+    
+        function checkGuess() {
+          /* Add your code to:
+             Check the outcome of the game. 
+             Display the relevant message in the 'message' paragraph
+             Disable the button 
+          */
+
+          if (                         ){
+            document.getElementById("message").innerHTML="You guessed correctly"
+          } else {
+            
+
+
+
+          }
+          
+
+        }
+      </script>
+  </head>
+  <body onload="startGame()">
+    <h1>Guess how much time has passed</h1>
+    <p>Number of seconds to guess:</p>
+    <p id="seconds"></p>
+
+    <!-- Add your code to call the checkGuess function when the button is clicked -->
+    <button id="guessButton">Guess</button>
+    
+    <p id="message"></p>
+  </body>
+</html>

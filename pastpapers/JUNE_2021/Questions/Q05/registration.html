@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>EcoBee Registration</title> 
+    <script>
+      function join(){
+        var firstName = document.getElementById("firstname").value
+        var lastName = document.getElementById("lastname").value
+        var age = document.forms.ageChoice.age.value;
+       
+	      // add code to assign the input mobile phone to the mobileNumber variable
+         var mobileNumber = 
+		 
+         // regular expression that will accept a single uppercase letter followed by 1 or more lowercase letters:
+        var acceptableNames = /^[A-Z]{1}[a-z]+$/
+
+		// add code to create a regular expression that will accept exactly 11 digits:
+        var acceptableMobile = 
+        
+        // display error if first name is not entered by user:
+        if (acceptableNames.test(firstName) === false){
+          alert("First name must start with an uppercase letter followed by lowercase letters ")
+
+        }else if(/* add code to check if last name is invalid */){
+          
+          // add code to display suitable error message*/
+          
+
+        }else if(/* add code to check if mobile number is invalid */){
+          
+          // add code to display suitable error message*/
+         
+       
+        }else if(age === ""){
+          alert("You must select an age group")  
+
+        }else{
+          // generate first part of username using first 3 letters of first name
+          var firstpart = firstName.substring(0,3)
+
+          // add code to generate second part of username using first 2 letters of last name
+         
+         
+
+          // add code to generate final part of username using last 3 digits of mobile number
+          
+
+
+          // add code to create the username
+          var username = 
+
+          // load welcome.html and pass username and age to it
+           window.location.href = "welcome.html?userAndAge=" + username + "," + age
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Registration Details</h2>
+      <p>First and Last names must begin with an uppercase letter followed by
+      one or more lowercase letters.</p>
+      <p><label for="firstname">First name *:</label>
+      <input type="text" id="firstname"></p>
+      <p><label for="lastname">Last name *:</label>
+      <input type="text" id="lastname"></p>
+      <p><label for="mobile">Mobile telephone number *:</label>
+      <input type="text" id="mobile"> (must be exactly 11 digits long)</p>
+      <form name="ageChoice">
+        <legend>Select your age group *</legend>
+          <input type="radio" name="age" value="15">
+          <label for="age">15 and under</label>
+          <input type="radio" name="age" value="16">
+          <label for="age">over 15</label>
+      </form>
+      <p><input type="button" onclick="join()" value="Join"></p>
+  </body>
+</html>

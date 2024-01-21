@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Space Tech Planet Facts</title>
+
+    <script>
+       /*add an array here to hold the planet facts
+      each paragraph in planetfacts.txt should be stored in an array element*/
+     
+
+      function showPlanetFacts(planetSelected) {
+          document.getElementById('planetInfo').value = planetArray[planetSelected];  
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <select name="planets" OnChange="showPlanetFacts(planets.value)">
+        <option>Choose a planet for more information</option>
+        <option value=0>Mars</option>
+        <option value=1>Jupiter</option>
+        <option value=2>Venus</option>
+        <option value=3>Mercury</option>
+        <option value=4>Neptune</option>
+      </select> 
+      <p><textarea id="planetInfo" rows="5" cols="41"></textarea></p>
+    </form>
+  </body>
+</html>

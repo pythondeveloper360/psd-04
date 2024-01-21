@@ -1,0 +1,59 @@
+*{
+    text-align: center;
+    font-family: Verdana;
+    color: #CCCCCC;
+
+}
+body{
+    background-color: #0000FF;
+}
+
+#banner{
+    width: 1000px;
+    height: 100px;
+
+}
+
+nav{
+    width:1000px;
+    height: 50px;
+}
+#navBar{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+#navBar a{
+    float: left;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(129, 129, 129);
+}
+
+#textArea{
+    width:500px;
+    height: 500px;
+
+}
+
+
+#imageArea{
+    width: 500px;
+    height: 500px;
+    display: inline;
+}
+#imageArea img{
+    width: 150px;
+    height: 150px;
+}
+#sectionParent{
+    /* margin-left: -100px; */
+    margin-top: 120px;
+
+    width: 1200px;
+    display: flex;
+}
+#mailLink{
+    color: yellow;
+}

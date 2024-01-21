@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>We Love Sailboats</title> 
+  </head>
+    <style>
+      body {
+        font-family: Arial;
+      }
+  </style>
+    <script>
+      // Array of staff created.  Uses this structure: Staff name, Staff photo filename, Staff experience
+      var staffArray = [
+        ["Maryam", "assets/maryam.jpg", "Maryam has been with us for three years. She is an expert in combining relaxing, private island holidays with the busier resorts."],
+        ["Samson","assets/samson.jpg", "Samson has been with us for three years. He is an expert in finding the right captain for the right person/family. He will ensure your experience is the best it possibly can be."],
+        ["Carolyn","assets/carolyn.jpg", "Carolyn has been with us for six years. She is an expert in finding the right sailboat for you. What she does not know about sailboats is not worth knowing."]
+      ]
+
+      function displayStaffPhoto(){
+        // Places the images of the staff from the staffArray into the 'staff' div
+        for (var count = 0; count < staffArray.length; count ++){
+          var photo = document.createElement('img') // Image placeholder created
+          photo.src = staffArray[count][1] // Source of the image set to the filename
+          photo.id = staffArray[count][0] // ID set to the staff name
+          document.getElementById('staff').appendChild(photo) // Image added to the page
+        }
+      }
+
+      function displayStaffDetails(){
+        // Name of the staff member whose image that has been clicked is generated          
+        var staffName = event.target.id 
+
+        var found = false
+        var count = 0
+        details = ""
+
+        while (count < staffArray.length && found == false) {
+          /* Add your code to:
+                find the staff member in the array whose image has been clicked
+                display the staff member name and experience in the 'staffDetails' paragraph
+          */
+          if (                    ){
+            found = true
+
+
+          }
+           
+
+        }
+      }
+    </script>
+  <body onload="displayStaffPhoto()">
+    <h1>Our staff</h1>
+    <p>Click on the image of the member of staff you want to find out more about</p>
+    <div id="staff" onclick="displayStaffDetails()">
+    </div>
+    <p id="staffDetails"></p>
+  </body>
+</html>

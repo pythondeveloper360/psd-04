@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tour guide search</title>
+  </head>
+  <body>
+    <h1>London London Tours - Tour Guides</h1>
+    <p><input type="text" id="searchBox" placeholder="Search for a tour guide"></p>
+    <button type="button" onclick="search()">Search</button>
+    <p id="message"></p>
+    <p id="guides"></p>
+
+    <script>
+      // A 2D array holding the names of guides and the places they give tours of
+      var guideArray = [["Samihah","British Museum"],
+                        ["Aanshi", "Big Ben"],
+                        ["Garcia", "Houses of Parliament"],
+                        ["Gill","Tower of London"],
+                        ["Monica","Covent Garden"]]
+
+      // call the function to display the list of guides
+      document.getElementById("guides").innerHTML = displayGuideNames()
+
+      function displayGuideNames() {
+        // Function to return the list of guides so that they can be displayed
+        var row
+        var guideList=""
+
+        // Loop through 2D array
+        for (row=0; row < guideArray.length; row ++) {
+          //add guide name to the guideList
+          guideList += guideArray[row][0] + " " + guideArray[row][1] + "<br>"
+        }
+        // Return the guide list
+        return guideList
+      } // end of displayGuideNames function
+
+    function search(){
+      // Search function
+      var found=false
+      var row=0
+
+      guideToFind = document.getElementById("searchBox").value
+      
+      while(row < guideArray.length && found==false){
+       // Add your code here
+
+
+
+
+
+
+
+
+
+
+
+
+        row++
+      } // end of while loop
+    } //end of search function
+  </script>
+  </body>
+</html>

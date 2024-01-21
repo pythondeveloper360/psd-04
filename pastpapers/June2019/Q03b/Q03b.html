@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <title>Q03b</title>
+	
+    <script>
+      function showSelectedImage(){
+        //function shows the image the user has selected from the drop down box
+        var doc=document.getElementById("imageOptions") //get the imageOption element
+        var pic=document.getElementById("picture") //get the picture element
+        //set the picture source
+        pic.src=doc.value
+        //set the width of the picture
+        pic.style.width="200px"
+      }
+
+      function enlargeImage(){
+        // add your code here to enlarge the picture when the user clicks on it
+        document.getElementById('picture').style.width = 'auto'
+      }
+    </script>
+  </head>
+	<body>
+    <h2>Select the picture you want to display</h2>
+
+		<select id="imageOptions" onChange="showSelectedImage()">
+			<option value="mars.jpg">Picture of Mars Rover</option>
+			<option value="earth.jpg">Picture of Earth</option>
+			<option value="moon.jpg">Picture of Moon</option>
+		</select>
+
+    <p><img id="picture" src="mars.jpg" width="200" alt="space picture" onclick="enlargeImage()"></p>
+	</body>
+</html>

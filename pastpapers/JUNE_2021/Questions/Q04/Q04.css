@@ -1,5 +1,31 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: #ffe570;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+#hp1{
+    font-size: 24px;
+}
+#hp2{
+    font-size:18px;
+}
 
+nav {
+    background-color: #ffe570;
+    padding: 10px;
+}
+nav p{
+    /* float: right; */
+    text-align: right;
+    font-size: 14px;
 
+}
+article{
+    padding: 10px;
+}
 
 
 
@@ -12,5 +38,15 @@
 
 @media only screen and (min-width: 600px) { 
     /* Responsive breakpoint - targets devices that have a minimum width of 600px and applies these styles */
+    /* header{
+        padding: 10px;    
+    } */
+    #hp1{
+        font-size: 40px;
+    }
+    #hp2{
+        font-size: 30px;
+    }
+    
 }
  
